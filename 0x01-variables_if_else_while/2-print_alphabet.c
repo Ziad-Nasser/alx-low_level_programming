@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
@@ -13,8 +11,8 @@ int main(void)
 
 	for (n = 97; n <= 122; n++)
 	{
-		putchar(n);
+		putchar('n');
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
