@@ -3,7 +3,7 @@
 /**
  * factorial - returns factorial number
  * @n: the number we want to get its factorial
- * retuen: factorial
+ * Retuen: factorial
  */
 int factorial(int n)
 {
