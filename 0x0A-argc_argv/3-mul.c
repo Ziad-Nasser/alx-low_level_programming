@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned mul = 0;
+	unsigned int mul = 0;
 
 	if (argc == 3)
 	{
