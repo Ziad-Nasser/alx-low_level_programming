@@ -14,11 +14,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		s1 = "";
+		s1 = '\0';
 	}
 	if (s2 == NULL)
 	{
-		s2 = "";
+		s2 = '\0';
 	}
 
 	while (s1[size1] != '\0')
@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		size2++;
 	}
-	n_str = (char *)malloc(sizeof(char) * (size1 + size2 + 1));
+	n_str = (char *)malloc(sizeof(char) * (size1 + size2) + 1);
 	if (n_str == NULL)
 	{
 		return (NULL);
