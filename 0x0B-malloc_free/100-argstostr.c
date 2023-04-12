@@ -41,7 +41,7 @@ char *argstostr(int ac, char **av)
 
 	if (n_str[tsize] == '\0')
 	{
-		n_str[tsize++] = '\n';
+		n_str[tsize++] = "\n";
 	}
 	return (n_str);
 }
