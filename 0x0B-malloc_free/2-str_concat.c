@@ -9,7 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int size1, size2;
+	int size1, size2, i;
 	char *n_str;
 
 	if (s1 == NULL)
@@ -35,15 +35,16 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 	size1 = 0, size2 = 0;
-	while (s1[size1] != '\0')
+	for (i = 0; i <= size1 + size2; i++)
 	{
-		n_str[size1] = s1[size1];
-		size1++;
-	}
-	while (s2[size2] != '\0')
-	{
-		n_str[size1] = s2[size2];
-		size1++, size2++;
+		if (size1 > i)
+		{
+			n_str[i] = s1[i];
+		}
+		else
+		{
+			n_str[i] = s2[i - size1];
+		}
 	}
 	n_str[size1] = '\0';
 	return (n_str);
