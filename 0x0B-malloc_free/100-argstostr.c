@@ -20,10 +20,10 @@ char *argstostr(int ac, char **av)
 	{
 		for (size2 = 0; av[size1][size2]; size2++)
 		{
-			size1++;
+			rtsize++;
 		}
 	}
-	size1 += ac;
+	rtsize += ac;
 	n_str = (char *)malloc(sizeof(char) * rtsize + 1);
 
 	if (n_str == NULL)
@@ -41,7 +41,7 @@ char *argstostr(int ac, char **av)
 
 	if (n_str[tsize] == '\0')
 	{
-		n_str[tsize] = '\n';
+		n_str[tsize++] = '\n';
 	}
 	return (n_str);
 }
