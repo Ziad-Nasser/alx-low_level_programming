@@ -30,7 +30,11 @@ char *str_concat(char *s1, char *s2)
 		size2++;
 	}
 	n_str = (char *)malloc(sizeof(char) * (size1 + size2 + 1));
-
+	if (n_str == '\0')
+	{
+		return (NULL);
+	}
+	size1 = 0, size2 = 0;
 	while (s1[size1] != '\0')
 	{
 		n_str[size1] = s1[size1];
