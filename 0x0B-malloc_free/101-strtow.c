@@ -8,7 +8,7 @@
  */
 int n_word(char *s)
 {
-	int i, number;
+	int i, number = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
