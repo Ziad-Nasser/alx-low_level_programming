@@ -40,9 +40,7 @@ char **strtow(char *str)
 	char **word;
 
 	if (str == NULL || *str == '\0')
-	{
 		return (NULL);
-	}
 	number = n_word(str);
 	if (number == 1)
 		return (NULL);
@@ -55,7 +53,7 @@ char **strtow(char *str)
 	{
 		if (str[x] != ' ' && (x == 0 || str[x - 1] == ' '))
 		{
-			for (y = 1; str[x + y] != ' ' && str[x + y] != '\0'; y++)
+			for (y = 1; str[x + y] != ' ' && str[x + y]; y++)
 				;
 			y++;
 			word[size] = (char *)malloc(sizeof(char) * y);
