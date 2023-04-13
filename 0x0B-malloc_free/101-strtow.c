@@ -10,11 +10,11 @@ int n_word(char *s)
 {
 	int i, number = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i]; i++)
 	{
 		if (s[i] == ' ')
 		{
-			if (s[i + 1] != '\0' && s[i + 1] != '\0')
+			if (s[i + 1] != '\0' && s[i + 1] != ' ')
 			{
 				number++;
 			}
