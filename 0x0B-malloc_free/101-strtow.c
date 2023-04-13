@@ -43,6 +43,9 @@ char **strtow(char *str)
 	{
 		return (NULL);
 	}
+	number = n_word(str);
+	if (number == 1)
+		return (NULL);
 	word = (char **)malloc(sizeof(char *) * number);
 	if (word == NULL)
 		return (NULL);
