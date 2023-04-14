@@ -38,12 +38,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (str == NULL)
 		return (NULL);
-	while (n < size2 && a < (size1 + n))
-		str[a++] = s2[b++];
-
-	while (n >= size2 && a < (size1 + size2))
-		str[a++] = s2[b++];
-
+	for (a = 0; s1[a] != '\0'; a++)
+	{
+		str[a] = s1[a];
+	}
+	for (b = 0; b < n; b++)
+	{
+		str[a] = s2[b];
+		a++;
+	}
 	str[a] = '\0';
 	return (str);
 }
