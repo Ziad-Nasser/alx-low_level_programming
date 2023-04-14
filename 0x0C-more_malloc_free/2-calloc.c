@@ -4,7 +4,7 @@
 #include "main.h"
 /**
  * *_calloc - function that allocates memory for an array
- * @nmemb: number of elements 
+ * @nmemb: number of elements
  * @size: size of each element
  * Return: pointer to the allocated memory.
  */
