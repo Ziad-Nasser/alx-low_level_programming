@@ -20,14 +20,14 @@ int main(int argc, char *argv[])
 	}
 	num1 = atoi(argv[1]);
 	s = argv[2];
-	num1 = atoi(argv[3]);
+	num2 = atoi(argv[3]);
 	if (get_op_func(s) == NULL || s[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((*s == '/' && num2 == 0) || (*s == '%' && num2 == 0))
+	if ((*s == '/' && num2 == 0) ||(*s == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
