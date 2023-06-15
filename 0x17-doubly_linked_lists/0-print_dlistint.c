@@ -4,7 +4,7 @@
  * @h: pointer
  * Return: the number of nodes
  */
-print_dlistint(const dlistint_t *h)
+size_t print_dlistint(const dlistint_t *h)
 {
 	size_t i;
 
